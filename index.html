@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M4 Trading: Algorithmic Trading Options</title>
+  <meta name="description" content="M4 Trading creates and distributes algorithmic trading robots, indicators, and systems for MetaTrader 5 and TradingView.">
+  <link rel="icon" href="assets/2d_m4_logo_increase.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260905j">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div id="space" aria-hidden="true">
+    <div class="nebula a"></div>
+    <div class="nebula b"></div>
+    <div class="nebula c"></div>
+    <canvas id="stars"></canvas>
+    <canvas id="stars2"></canvas>
+  </div>
+
+  <div class="site">
+    <div class="top-banner" id="top">
+      <img src="PICTURES/M4Logo_space.png" alt="M4 Trading">
+    </div>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#top">
+          <img src="assets/2d_m4_logo_increase.svg" alt="M4 Trading logo">
+          <span class="brand-name heading-3d">
+            <span class="bo-layer" aria-hidden="true">M4 TRADING<span class="reg">&reg;</span></span>
+            <span class="bo-top">M4 TRADING<span class="reg">&reg;</span></span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a class="tab-btn" href="#systems">Systems</a></li>
+          <li><a class="tab-btn" href="#platforms">Platform</a></li>
+          <li><a class="tab-btn" href="#media">Media</a></li>
+          <li><a class="tab-btn" href="#process">Process</a></li>
+          <li><a class="tab-btn" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="live-chart" aria-label="Live EURUSD TradingView chart">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener nofollow" target="_blank"><span class="blue-text">EURUSD chart</span></a><span class="trademark"> by TradingView</span></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+        "allow_symbol_change": true,
+        "calendar": false,
+        "details": false,
+        "hide_side_toolbar": true,
+        "hide_top_toolbar": false,
+        "hide_legend": false,
+        "hide_volume": false,
+        "hotlist": false,
+        "interval": "15",
+        "locale": "en",
+        "save_image": true,
+        "style": "1",
+        "symbol": "OANDA:EURUSD",
+        "theme": "dark",
+        "timezone": "America/New_York",
+        "backgroundColor": "#0F0F0F",
+        "gridColor": "rgba(255, 255, 255, 0.2)",
+        "watchlist": [],
+        "withdateranges": false,
+        "compareSymbols": [
+          {
+            "symbol": "COINBASE:BTCUSD",
+            "position": "SameScale"
+          },
+          {
+            "symbol": "COINBASE:ETHUSD",
+            "position": "SameScale"
+          }
+        ],
+        "support_host": "https://www.tradingview.com",
+        "studies": [
+          "STD;MA%1Cross",
+          "STD;DEMA"
+        ],
+        "autosize": true
+      }
+        </script>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="kicker">www.m4algotrading.com</p>
+            <h1 class="heading-3d">M4 Trading: Algorithmic Trading <span class="lime">Options</span></h1>
+            <p class="lede" style="margin-top:22px">Algorithmic trading creation and distribution. Precision robots, indicators, and full systems engineered for MetaTrader 5 and TradingView — built to execute rules, not hunches.</p>
+            <div class="actions">
+              <a class="btn btn-lime" href="#contact">Request a System</a>
+              <a class="btn btn-ghost" href="#media">Watch Briefing</a>
+            </div>
+            <div class="stats">
+              <div class="stat"><b>MT5</b><span>Expert Advisors &amp; studies</span></div>
+              <div class="stat"><b>TV</b><span>Pine indicators &amp; strategies</span></div>
+              <div class="stat"><b>24/7</b><span>Rule-based execution</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <video id="hero-video" autoplay muted loop playsinline poster="assets/2d_m4_logo_increase.svg">
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+                <source src="assets/videos/hero.webm" type="video/webm">
+              </video>
+              <div class="media-fallback" id="hero-fallback">HERO VIDEO SLOT<br>Drop file at assets/videos/hero.mp4</div>
+            </div>
+            <div class="scanline"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="systems">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker">Products</p>
+            <h2 class="heading-3d">Robots. Indicators. <span class="red">Systems.</span></h2>
+            <p class="lede">M4 designs, packages, and distributes algorithmic trading options so desks can deploy the same logic across charts and live accounts.</p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/><circle cx="12" cy="14" r="1.5"/></svg>
+              </div>
+              <h3>Trading Robots</h3>
+              <p>MetaTrader 5 Expert Advisors with defined entries, exits, position sizing, and magic-number isolation. Built for unattended, rule-locked execution.</p>
+            </article>
+            <article class="card">
+              <div class="icon-box silver" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16"/><path d="M7 14l4-5 3 3 5-7"/></svg>
+              </div>
+              <h3>Indicators</h3>
+              <p>Signal layers for MT5 and TradingView: trend bias, volatility bands, and confluence scores that stay readable under live market noise.</p>
+            </article>
+            <article class="card">
+              <div class="icon-box red" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+              </div>
+              <h3>Full Systems</h3>
+              <p>End-to-end stacks: robot + indicator + playbook. Distribution-ready packages with documentation, risk notes, and platform install paths.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="platforms">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker">Deployment</p>
+            <h2 class="heading-3d">Built for <span class="lime">MT5</span> &amp; TradingView</h2>
+          </div>
+          <div class="platforms">
+            <article class="platform">
+              <p class="kicker">MetaTrader 5</p>
+              <h3>Expert Advisors</h3>
+              <p>Compile-ready EAs and custom studies. Lot models, news filters, and session windows can be specified per desk. Delivery includes install notes and parameter maps.</p>
+            </article>
+            <article class="platform">
+              <p class="kicker">TradingView</p>
+              <h3>Pine Script Logic</h3>
+              <p>Indicators and strategy scripts for chart overlay, alerts, and broker-connected automation where your account stack supports it.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="media">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker">Briefings</p>
+            <h2 class="heading-3d">Product <span class="lime">Media</span></h2>
+            <p class="lede">Replace the placeholder files with your custom videos. Paths: assets/videos/product.mp4 and assets/videos/overview.mp4.</p>
+          </div>
+          <div class="video-grid">
+            <article class="video-card">
+              <video controls preload="metadata" poster="assets/2d_m4_logo_increase.svg">
+                <source src="assets/videos/product.mp4" type="video/mp4">
+                <source src="assets/videos/product.webm" type="video/webm">
+              </video>
+              <div class="video-meta">
+                <h3>System walkthrough</h3>
+                <p>Robot logic, indicator overlays, and live chart routing.</p>
+              </div>
+            </article>
+            <article class="video-card">
+              <video controls preload="metadata" poster="assets/2d_m4_logo_increase.svg">
+                <source src="assets/videos/overview.mp4" type="video/mp4">
+                <source src="assets/videos/overview.webm" type="video/webm">
+              </video>
+              <div class="video-meta">
+                <h3>Company overview</h3>
+                <p>How M4 creates and distributes algorithmic trading options.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker">Engagement</p>
+            <h2 class="heading-3d">From brief to <span class="red">deploy</span></h2>
+          </div>
+          <div class="steps">
+            <article class="step"><h3>Scope</h3><p>Markets, timeframe, risk envelope, and platform (MT5 / TradingView).</p></article>
+            <article class="step"><h3>Engineer</h3><p>Rules encoded as robots, indicators, or a combined system.</p></article>
+            <article class="step"><h3>Validate</h3><p>Parameter maps, session filters, and documented edge cases.</p></article>
+            <article class="step"><h3>Distribute</h3><p>Licensed package, install path, and ongoing iteration if required.</p></article>
+          </div>
+          <div class="cta-band" style="margin-top:36px">
+            <div>
+              <p class="kicker">Next transmission</p>
+              <h2 class="heading-3d" style="transform:none;font-size:1.4rem">Commission an M4 system</h2>
+            </div>
+            <a class="btn btn-red" href="#contact">Open Channel</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="kicker">Contact</p>
+            <h2 class="heading-3d">Talk to <span class="lime">M4</span></h2>
+            <p class="lede" style="margin-top:14px">Tell us the platform, markets, and whether you need a robot, indicator, or full system. Or click the floating AI unit for instant site answers.</p>
+            <p style="margin-top:18px;color:var(--silver)">hello@m4algotrading.com<br>www.m4algotrading.com</p>
+            <p style="margin-top:18px;font-size:0.88rem;color:var(--silver)">Trading involves risk of loss. Systems are tools, not financial advice. Past results do not guarantee future performance.</p>
+          </div>
+          <form id="contact-form" novalidate>
+            <label>Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+            <label>Need
+              <select name="need">
+                <option>Trading robot (MT5)</option>
+                <option>Indicator (MT5 / TradingView)</option>
+                <option>Full system</option>
+                <option>Distribution / licensing</option>
+              </select>
+            </label>
+            <label>Message
+              <textarea name="message" required placeholder="Markets, timeframe, risk notes..."></textarea>
+            </label>
+            <button class="btn btn-lime" type="submit">Transmit Request</button>
+            <p class="form-note" id="form-note" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <p>&copy; 2026 M4 Trading. Algorithmic trading options for MT5 and TradingView.</p>
+        <p><a href="https://www.m4algotrading.com">m4algotrading.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <button id="m4-bot" type="button" aria-label="Open M4 AI customer service robot" aria-expanded="false" aria-controls="chat-panel">
+    <span class="hint">Ask M4-AID</span>
+    <span class="bot-bubble">
+      <svg class="bot-face" viewBox="0 0 44 36" aria-hidden="true">
+        <rect x="4" y="8" width="36" height="22" rx="6" fill="#111" stroke="#32CD32" stroke-width="1.5"/>
+        <circle cx="16" cy="19" r="3.2" fill="#32CD32"/>
+        <circle cx="28" cy="19" r="3.2" fill="#32CD32"/>
+        <rect x="18" y="2" width="8" height="8" rx="2" fill="#c0c0c0"/>
+        <rect x="21" y="0" width="2" height="4" fill="#e10600"/>
+      </svg>
+    </span>
+  </button>
+
+  <div class="chat-panel" id="chat-panel" role="dialog" aria-labelledby="chat-title">
+    <div class="chat-head">
+      <h2 id="chat-title">M4-AID // Site Robot</h2>
+      <button class="chat-close" id="chat-close" type="button" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-log" id="chat-log">
+      <div class="msg bot">Online. I answer questions about M4 Trading, robots, indicators, MT5, TradingView, and this website. Click send after your question.</div>
+    </div>
+    <form class="chat-form" id="chat-form">
+      <label class="visually-hidden" for="chat-input" style="position:absolute;left:-999px">Question</label>
+      <input id="chat-input" type="text" autocomplete="off" placeholder="Ask about M4...">
+      <button class="btn btn-lime" type="submit" aria-label="Send">Go</button>
+    </form>
+  </div>
+
+  <div class="music-float" id="music-float" role="group" aria-label="Music player">
+    <button class="music-btn" id="music-btn" type="button" aria-label="Play Star Wars Main Theme">
+      <svg class="ico-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="ico-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    </button>
+    <div class="music-meta">
+      <span class="music-track">Star Wars Main Theme</span>
+      <span class="music-state" id="music-state">
+        <span class="eq" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="music-label">Tap to play</span>
+      </span>
+    </div>
+  </div>
+  <audio id="m4-audio" preload="none" src="assets/audio/star-wars-main-theme.mp3"></audio>
+
+  <script>
+    (function () {
+      var v = document.getElementById("hero-video");
+      var f = document.getElementById("hero-fallback");
+      if (!v || !f) return;
+      v.addEventListener("error", function () { f.style.display = "grid"; v.style.display = "none"; });
+      v.addEventListener("loadeddata", function () { f.style.display = "none"; });
+      setTimeout(function () {
+        if (v.readyState < 2) { f.style.display = "grid"; }
+      }, 400);
+    })();
+  </script>
+  <script src="js/main.js?v=20260905g"></script>
+</body>
+</html>
