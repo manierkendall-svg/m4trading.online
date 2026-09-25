@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="M4 Trading logo">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#32CD32"/>
+      <stop offset="55%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#E10600"/>
+    </linearGradient>
+    <linearGradient id="core" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#3CFF3C"/>
+      <stop offset="100%" stop-color="#1A8A1A"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="240" height="240" rx="36" fill="#050505"/>
+  <circle cx="120" cy="120" r="96" fill="none" stroke="url(#ring)" stroke-width="6"/>
+  <circle cx="120" cy="120" r="78" fill="none" stroke="#32CD32" stroke-width="1.5" opacity="0.45"/>
+  <path d="M48 168 L48 78 L88 138 L128 78 L128 168" fill="none" stroke="url(#core)" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter" filter="url(#glow)"/>
+  <path d="M148 78 H188 V108 H168 V168 H148 Z" fill="#C0C0C0"/>
+  <rect x="168" y="128" width="28" height="14" fill="#E10600"/>
+  <circle cx="120" cy="120" r="4" fill="#32CD32"/>
+</svg>
